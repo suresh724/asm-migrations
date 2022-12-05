@@ -1,0 +1,11 @@
+CRITICAL - 2022-12-05 01:46:27 --> Allowed fields must be specified for model: App\Models\ShgProfile
+in SYSTEMPATH\BaseModel.php on line 1160.
+ 1 SYSTEMPATH\BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\ShgProfile')
+ 2 SYSTEMPATH\BaseModel.php(862): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\MigrateController.php(52): CodeIgniter\Model->update('101', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MigrateController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MigrateController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
